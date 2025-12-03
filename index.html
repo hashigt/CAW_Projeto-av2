@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"defer></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Educativo - Ciência Geral</title>
+    <!-- Liga o HTML ao arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🔬 Quiz de Ciências</h1>
+        </header>
+
+        <!-- TELA 1: Início -->
+        <div id="start-screen" class="start-screen">
+            <p>Teste seus conhecimentos sobre ciência geral!</p>
+            <p>São 5 perguntas. Você está pronto?</p>
+            <button id="start-btn" class="btn">Começar Quiz</button>
+        </div>
+
+        <!-- TELA 2: Perguntas -->
+        <div id="quiz-screen" class="hide">
+            <div class="progress-bar">
+                <span id="question-count">Questão 1 de 5</span>
+            </div>
+            
+            <h2 id="question-text">Pergunta...</h2>
+            
+            <div id="answers-container" class="answers-container">
+                <!-- Os botões serão inseridos aqui pelo JavaScript -->
+            </div>
+
+            <div class="quiz-footer">
+                <span class="score-board">Placar: <span id="score">0</span></span>
+                <button id="next-btn" class="btn hide">Próxima ➤</button>
+            </div>
+        </div>
+
+        <!-- TELA 3: Resultado -->
+        <div id="result-screen" class="hide result-screen">
+            <h2>Quiz Finalizado!</h2>
+            <span id="final-score-display">0/0</span>
+            <p id="feedback-message" class="message">...</p>
+            <button id="restart-btn" class="btn">Reiniciar Quiz ↺</button>
+        </div>
+    </div>
+
+    <!-- Liga o HTML ao arquivo de lógica -->
+    <script src="script.js" defer></script>
+</body>

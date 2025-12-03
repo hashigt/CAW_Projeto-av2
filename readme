@@ -1,0 +1,75 @@
+🔬 Projeto: Quiz Educativo de Ciências
+
+Este é um mini-projeto web desenvolvido com HTML5, CSS3 e JavaScript (Vanilla), sem o uso de frameworks externos. O objetivo é criar uma aplicação interativa simples para fins educacionais, onde o utilizador responde a perguntas de múltipla escolha e recebe feedback imediato.
+
+📂 Estrutura de Ficheiros
+
+O projeto está dividido em três ficheiros principais para manter a organização e as boas práticas (Separação de Preocupações):
+
+index.html (Estrutura)
+
+Contém o esqueleto da página.
+
+Define os contentores para as três "telas" do jogo: Tela Inicial, Tela do Quiz e Tela de Resultados.
+
+Utiliza classes utilitárias (como .hide) para alternar a visibilidade destas telas sem recarregar a página.
+
+style.css (Estilização)
+
+Define a aparência visual do quiz.
+
+Usa variáveis CSS (:root) para facilitar a gestão de cores.
+
+Implementa um design responsivo e centralizado.
+
+Contém as classes .correct (verde) e .wrong (vermelho) para dar feedback visual instantâneo ao utilizador.
+
+script.js (Lógica)
+
+Contém o array de objetos questions com as perguntas, opções e respostas corretas.
+
+Gerencia o estado do jogo (pontuação atual, pergunta atual).
+
+Manipula o DOM para criar botões dinamicamente e atualizar textos.
+
+Controla o fluxo do jogo (Iniciar -> Responder -> Próxima -> Resultado -> Reiniciar).
+
+🚀 Como Executar
+
+Não é necessário instalar nada (como Node.js ou servidores). O projeto roda diretamente no navegador.
+
+Certifique-se de que os três ficheiros (index.html, style.css, script.js) estão na mesma pasta.
+
+Dê um duplo clique no ficheiro index.html.
+
+O projeto abrirá no seu navegador padrão (Chrome, Edge, Firefox, etc.).
+
+🧠 Detalhes do Código
+
+Lógica de Navegação (SPA Simples)
+
+O site funciona como uma Single Page Application (SPA). Não existem múltiplas páginas HTML. Em vez disso, o JavaScript adiciona ou remove a classe CSS .hide (que tem display: none) nos elementos #start-screen, #quiz-screen e #result-screen para mostrar apenas o que é relevante no momento.
+
+Verificação de Respostas
+
+Quando o utilizador clica numa opção:
+
+A função selectAnswer verifica se o índice clicado corresponde ao correct definido no array de perguntas.
+
+Se correto, o botão fica verde e a pontuação aumenta.
+
+Se incorreto, o botão clicado fica vermelho, e o sistema ilumina a resposta correta em verde automaticamente (fins pedagógicos).
+
+Todos os botões são desativados para impedir mudanças de resposta.
+
+O botão "Próxima" aparece.
+
+🛠 Requisitos Cumpridos
+
+[x] Funciona localmente sem erros.
+
+[x] Código organizado e comentado.
+
+[x] Interface limpa e responsiva.
+
+[x] Sem frameworks ou dependências externas.
