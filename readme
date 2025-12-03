@@ -63,13 +63,3 @@ Se incorreto, o botão clicado fica vermelho, e o sistema ilumina a resposta cor
 Todos os botões são desativados para impedir mudanças de resposta.
 
 O botão "Próxima" aparece.
-
-🛠 Requisitos Cumpridos
-
-[x] Funciona localmente sem erros.
-
-[x] Código organizado e comentado.
-
-[x] Interface limpa e responsiva.
-
-[x] Sem frameworks ou dependências externas.
